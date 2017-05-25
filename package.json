@@ -1,0 +1,25 @@
+{
+  "name": "@musicociel/orchestrator",
+  "version": "0.0.1",
+  "description": "Server allowing multiple Musicociel clients to be orchestrated to display the same song at the same time, at the same position.",
+  "license": "AGPL-3.0",
+  "bin": "bin/musicociel-orchestrator",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublish": "yarn build",
+    "test": "true"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.21",
+    "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "sockjs": "^0.3.18"
+  },
+  "files": [
+    "src",
+    "build",
+    "bin"
+  ]
+}
